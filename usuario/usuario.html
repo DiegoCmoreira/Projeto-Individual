@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleusuario.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="painel">
+            <ul class="navbar">
+
+                <img src="../assets/imgs/Meu projeto.png"/>
+
+                <li>
+                    <a class="agora">Inicio</a>
+                </li>
+                <li>
+                    <a href="./treino.html">Treino</a>
+                </li>
+                <li>
+                    <a href="./dashboard.html">Estatistica</a>
+                </li>
+                <li>
+                    <a href="../index.html">Sair</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="dados">
+                Insira sua altura
+                <input type="number" id="input_altura">
+                <br>
+                Insira sua a Posição que joga
+                <input type="text" id="input_posicao">
+                <br>
+                Insira o nome do seu Time (Caso faça parte de um)
+                <input type="text" id="input_time">
+                <br>
+                <button onclick="CadastrarNovosDados()">Cadastrar</button>
+            </div>
+
+            <div class="exibicao" id="exibir"></div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
+<script>
+function CadastrarNovosDados(){
+    var dados = {
+        altura: Number(input_altura.value),
+        posicao: input_posicao.value,
+        time: input_time.value
+    }
+    console.log(dados)
+    
+    exibir.innerHTML = dados.altura;
+}
+</script>
