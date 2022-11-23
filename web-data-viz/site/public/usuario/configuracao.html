@@ -13,7 +13,7 @@
         <div class="painel">
             <ul class="navbar">
 
-                <img src="../assets/imgs/Meu projeto.png"/>
+                <img src="./assets/imgs/MeuProjeto.png"/>
 
                 <li>
                     <a class="agora">Inicio</a>
@@ -32,19 +32,12 @@
 
         <div class="container">
             <div class="dados">
-                Insira sua altura
-                <input type="number" id="input_altura">
-                <br>
-                Insira sua a Posição que joga
-                <input type="text" id="input_posicao">
-                <br>
-                Insira o nome do seu Time (Caso faça parte de um)
-                <input type="text" id="input_time">
-                <br>
-                <button onclick="CadastrarNovosDados()">Cadastrar</button>
+                
+                <div class="exibicao" id="exibir"></div>
+              
+                <button onclick="configurar()">Configurar Dados</button>
             </div>
 
-            <div class="exibicao" id="exibir"></div>
         </div>
     </div>
 

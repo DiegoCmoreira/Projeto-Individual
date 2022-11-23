@@ -51,21 +51,21 @@ body {
   height: fit-content;
   padding: 40px 0;
   color: black;
-  background-size: cover;
 }
 
 .banner .container {
   background-color: rgb(255, 231, 180);
   border-radius: 10px;
+  border-style: solid;
   width: 58%;
-  height: 350px;
+  height: 300px;
   justify-content: center;
   align-items: center;
 }
 
 .banner .container img {
   padding-left: 35px;
-  width: 30%;
+  width: 25%;
 }
 
 .tamanho-conteudo { 
@@ -77,7 +77,7 @@ body {
   margin: 0;
   padding: 0;
   width: 280px;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 /* missao visao valores */
@@ -88,6 +88,11 @@ body {
   border-radius: 20px;
   justify-content: center;
   background-color: rgb(255, 231, 180);
+}
+
+.boxes {
+ border-style: solid;
+ border-radius: 20px;
 }
 
 .box img {

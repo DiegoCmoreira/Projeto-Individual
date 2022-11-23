@@ -6,12 +6,18 @@ body {
   font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: black;
   background-image: url("../assets/imgs/cenario\ quadra.jpg");
+  background-size: cover;
 }
 
 .container {
   width: 80%;
   margin: auto;
   display: flex;
+}
+
+.simulador .container {
+  border-style: solid;
+  border-radius: 20px;
 }
 
 .header .container {
@@ -78,5 +84,5 @@ body {
 }
 
 .simulador .container p {
-  margin: 20px;
+  margin: 7px;
 }

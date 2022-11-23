@@ -56,16 +56,16 @@ body {
 }
 /* LOGIN */
 
-.container .card img {
-  margin-top: 25px;
-  width: 40%;
+.banner .container img {
+  width: 16%;
+  margin-top: 15px;
 }
 
 .banner .container .card {
 margin-top: auto;
   background-color: #ffffff;
-  width: 35%;
-  height: 130%;
+  width: 65%;
+  height: 120%;
   display: flex;
   flex-direction: column;
   color: black;
@@ -78,6 +78,12 @@ margin-top: auto;
   justify-content: space-around;
 }
 
+.card2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
 
 .banner #div_erros_login {
   margin-top: 15px;
