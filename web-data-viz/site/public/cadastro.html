@@ -70,13 +70,24 @@
                         <input id="nome_input" type="text" placeholder="Seu nome">
                                                 
                         <span class="tipo_campo">Tipo:</span>
-                        <input type="text" id="input_tipo">
+                        <select name="tipo" id="input_tipo">
+                            <option value="">Nada</option>
+                            <option value="Levantador">Levantador</option>
+                            <option value="Libero">Libero</option>
+                            <option value="Central">Central</option>
+                            <option value="Oposto">Oposto</option>
+                            <option value="Ponteiro">Ponteiro</option>
+                        </select>
                         
                         <span class="tipo_campo">Altura:</span>
                         <input type="number" id="input_altura" placeholder="Em cm">
                         
                         <span class="tipo_campo">Nivel:</span>
-                        <input type="text" id="input_nivel" placeholder="Iniciante, Intermediario, Avançado">
+                        <select name="nivel" id="input_nivel">
+                            <option value="Iniciante">Iniciante</option>
+                            <option value="Amador">Amador</option>
+                            <option value="Profissional">Profissional</option>
+                        </select>
                         
                         
                     </div>
