@@ -52,3 +52,15 @@ function fecharModal() {
     divModal.style.display = "none";
 }
 
+// carrossel
+const controles = document.querySelectorAll(".controle");
+let primeiroItem = 0;
+const itens = document.querySelectorAll(".item");
+const maxItens = itens.length;
+
+controles.forEach((controle) => {
+    controle.addEventListener("click", () => {
+        const esquerda = controle.classList.contains("setaEsquerda");
+
+    });
+});

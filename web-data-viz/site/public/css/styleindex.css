@@ -6,13 +6,14 @@ body {
   font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(221, 165, 44);
   background-image: url("../assets/imgs/cenario\ quadra.jpg");
-  background-size: cover;
+  background-size:contain;
 }
 
 .container {
   width: 80%;
   margin: auto;
   display: flex;
+  position: relative;
 }
 
 .header .container {
@@ -51,6 +52,7 @@ body {
   height: fit-content;
   padding: 40px 0;
   color: black;
+  margin-top: 20px;
 }
 
 .banner .container {
@@ -122,6 +124,65 @@ body {
   align-items: center;
 }
 
+/* Carossel */
+
+.giragira .container{
+  margin-top: 30px;
+  border-style: solid;
+  border-radius: 20px;
+
+}
+
+.galeriaFixa {
+  overflow-x: auto;
+}
+
+.galeria {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.setaEsquerda, .setaDireita {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 90px;
+  line-height: 250px;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  transition: all 600ms ease-in-out;
+}
+
+.setaDireita {
+  left: auto;
+  right: 0;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.setaDireita:hover,
+.setaEsquerda:hover {
+  opacity: 1;
+}
+
+.item {
+  width: 300px;
+  height: 200px;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: all 600ms ease-in-out;
+}
+
+.primeiroItem {
+  opacity: 1;
+}
 
 /* FOOTER */
 

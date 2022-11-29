@@ -12,6 +12,13 @@ body {
     justify-content: center;
 }
 
+.navbar li {
+    border-style: solid;
+    border-color: rgb(255, 216, 131);
+    background-color: rgb(255, 231, 180);
+    
+}
+
 .navbar a{
     text-decoration: none;
     color: black;
@@ -19,12 +26,15 @@ body {
 
 .agora {
     cursor: pointer;
-    font-weight: 800;
+    font-weight: 800;   
 }
 
 .banner .painel {
     background-color: rgb(255, 231, 180);
     width: 20%;
+    background-image: url("../assets/imgs/hinata.jpg");
+    background-size: contain;
+    border-style:solid;
 }
 
 .banner .navbar {
@@ -47,8 +57,48 @@ body {
     width: 80%;
 }
 
-.container .dados{
-    flex-direction:column;
-    align-items: flex-end;
-    justify-content: end;
+/* TREINO */
+
+header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 201, 130);
+    border-style: solid;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner .container {
+    display: flex;
+    flex-direction: column;
+} 
+
+.caixa {
+    width: auto;
+    height: 515px;
+    overflow-y: scroll;
+    background-color: rgb(255, 231, 180);
+    border-style: solid;
+}
+
+.iniciante {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.texto {
+    width: 60%;
+}
+
+.iniciante h3 {
+    margin-top: 50px;
 }
