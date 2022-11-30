@@ -43,8 +43,21 @@ function cadastrar1(tipo, altura, nivel) {
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
+
+function inserir(partida, vitoria, derrota, ponto) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function inserir():", partida, vitoria, derrota, ponto);
+    
+    // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
+    //  e na ordem de inserção dos dados.
+    var instrucao = `
+        INSERT INTO Historico (partida, vitoria, derrota, ponto) VALUES ('${partida}', '${vitoria}', '${derrota}', ${ponto});
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
 module.exports = {
     entrar,
     cadastrar,
     listar,
+    inserir
 };

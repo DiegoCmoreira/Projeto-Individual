@@ -19,9 +19,10 @@ foreign key (fkJogador) references Jogador(idJogador)
 
 create table Historico(
 idHistorico int primary key auto_increment,
-qtd_vitoria char(8),
-qtd_derrota char(8),
-total_pontos char(8),
+partida char(8),
+vitoria char(8),
+derrota char(8),
+ponto char(8),
 fkUsuario int,
 foreign key (fkUsuario) references Usuario(idUsuario)
 );

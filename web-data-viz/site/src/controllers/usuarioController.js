@@ -103,9 +103,37 @@ function cadastrar(req, res) {
     }
 }
 
+function inserir(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var partida = req.body.partidaServer;
+    var vitoria = req.body.vitoriaServer;
+    var derrota = req.body.derrotaServer;
+    var ponto = req.body.pontoServer;
+    
+
+        
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.inserir(partida, vitoria, derrota, ponto)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
+    inserir,
     testar
 }
