@@ -22,6 +22,7 @@ body {
 .navbar a{
     text-decoration: none;
     color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .agora {
@@ -73,6 +74,7 @@ header {
 header a {
     text-decoration: none;
     color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .banner .container {
@@ -96,7 +98,9 @@ header a {
 }
 
 .texto {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 60%;
+    font-size: 18;
 }
 
 .iniciante h3 {
@@ -111,6 +115,8 @@ header a {
     flex-direction: column;
     align-items: center;
     border-style: solid;
+    background-image: url("../assets/imgs/ceu.jpg");
+    background-size: cover;
 }
 
 .card2 {
@@ -130,6 +136,7 @@ header a {
 .formulario .tipo_campo {
     font-size: 20px;
     font-weight: 400 !important;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
 input {
@@ -142,7 +149,7 @@ input {
 }
 
 .btn_inserir {
-    font-family: "Barlow", sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
     width: 12%;
     height: 40px;
@@ -163,6 +170,9 @@ button {
     height: 340px;
     border-style: solid;
     justify-content: center;
+    background-color: #7694c0;
+    background-image: url("../assets/imgs/ceu2.jpg");
+    background-size: cover;
 }
 
 .valores{
@@ -175,34 +185,43 @@ button {
     background-color: rgb(255, 231, 180);;
     width: 100px;
     height: 100px;
-    border: 3px solid black;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#Quadrado .texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
 }
 
 .valores #Quadrado #totalPartidas {
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 30px;
     font-size: 30px;
 }
 
 .valores #Quadrado #qtdVitorias {
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 30px;
     font-size: 30px;
 }
 
 .valores #Quadrado #qtdDerrotas {
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 30px;
     font-size: 30px;
 }
 
 .valores #Quadrado #qtdPontos {
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 30px;
     font-size: 30px;
 }
 

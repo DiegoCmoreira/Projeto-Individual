@@ -56,8 +56,8 @@ function inserir(partida, vitoria, derrota, ponto) {
     return database.executar(instrucao);
 }
 module.exports = {
-    entrar,
-    cadastrar,
     listar,
+    cadastrar,
+    entrar,
     inserir
 };
