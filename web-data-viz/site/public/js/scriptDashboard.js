@@ -5,7 +5,8 @@ function inserir() {
     var partidaVar = input_partida.value;
     var vitoriaVar = input_vitoria.value;
     var derrotaVar = input_derrota.value;
-    var pontoVar = input_pontos.value;
+    var pontoVar = input_pontos.value
+    var idUsuario = sessionStorage.getItem("ID_USUARIO")
 
     // Enviando o valor da nova input
     fetch("/usuarios/inserir", {
@@ -19,7 +20,8 @@ function inserir() {
            partidaServer: partidaVar,
            vitoriaServer: vitoriaVar,
            derrotaServer: derrotaVar,
-           pontoServer: pontoVar
+           pontoServer: pontoVar,
+           idUsuarioServer: idUsuario
         })
     }).then(function (resposta) {
 

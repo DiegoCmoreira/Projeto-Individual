@@ -118,7 +118,7 @@
 
 <script>
     function cadastrar() {
-        aguardar();
+        
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
@@ -134,7 +134,7 @@
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "<i>ERRO</i><br>(Ainda tem campos em branco)";
 
-            finalizarAguardar();
+            
             return false;
         } else if (senhaVar != confirmacaoSenhaVar) {
             mensagem_erro.innerHTML = "<i>ERRO</i><br>(Senha e Confirmar Senha são diferentes)"

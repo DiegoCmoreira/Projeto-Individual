@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleusuario.css">
     <link rel="stylesheet" href="../js/funcoes.js">
+    <script src="../js/scriptConfig.js"></script>
+
     <title>Document</title>
 </head>
-<body>
+
+<body onload="chamar()">
 
     <div class="banner">
         <div class="painel">
             <ul class="navbar">
 
-                <img src="../assets/imgs/MeuProjeto.png"/>
+                <img src="../assets/imgs/MeuProjeto.png" />
 
                 <li>
                     <a class="agora">Configurações</a>
@@ -25,37 +29,35 @@
                 <li>
                     <a href="./dashboard.html">Estatistica</a>
                 </li>
-                
-                <div class="btn-logout" onclick="limparSessao()">
-                    <h3>Sair</h3>
-                </div>
+
+                <li>
+                    <a href="../index.html">Sair</a>
+                </li>
             </ul>
         </div>
 
         <div class="container">
             <div class="dados">
-                
-                <div class="exibicao" id="exibir"></div>
-              
-                <button onclick="configurar()">Configurar Dados</button>
+                <b>Nome:</b> <span id="nome_usuario">nome</span>
+                    
+                <b>Tipo:</b> <span id="tipo_usuario">tipo jogador</span>
             </div>
-
+            <div class="dados">
+                <b>Altura:</b> <span id="altura_usuario">altura cm</span>
+                        
+                <b>Nivel:</b> <span id="nivel_usuario">nivel jogador</span>
+            </div>                    
         </div>
     </div>
 
-    
-
 </body>
+
 </html>
 <script>
-function CadastrarNovosDados(){
-    var dados = {
-        altura: Number(input_altura.value),
-        posicao: input_posicao.value,
-        time: input_time.value
-    }
-    console.log(dados)
-    
-    exibir.innerHTML = dados.altura;
-}
+
+    nome_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+    tipo_usuario.innerHTML = sessionStorage.TIPO_USUARIO;
+    altura_usuario.innerHTML = sessionStorage.ALTURA_USUARIO;
+    nivel_usuario.innerHTML = sessionStorage.NIVEL_USUARIO;
+
 </script>

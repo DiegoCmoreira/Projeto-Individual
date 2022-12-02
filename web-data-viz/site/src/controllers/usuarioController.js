@@ -109,11 +109,12 @@ function inserir(req, res) {
     var vitoria = req.body.vitoriaServer;
     var derrota = req.body.derrotaServer;
     var ponto = req.body.pontoServer;
+    var idUsuario = req.body.idUsuarioServer
     
 
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.inserir(partida, vitoria, derrota, ponto)
+        usuarioModel.inserir(partida, vitoria, derrota, ponto, idUsuario)
             .then(
                 function (resultado) {
                     res.json(resultado);
