@@ -24,4 +24,8 @@ router.post("/inserir", function (req, res) {
     usuarioController.inserir(req, res);
 });
 
+router.post("/avaliar", function (req, res) {
+    usuarioController.avaliar(req, res);
+});
+
 module.exports = router;

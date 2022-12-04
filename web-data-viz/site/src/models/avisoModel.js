@@ -4,7 +4,7 @@ function listar() {
     console.log("ACESSEI O AVISO  MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listar()");
     var instrucao = `
     select sum(partida) as total_partidas, sum(vitoria) as total_vitorias, sum(derrota) as total_derrotas,
-sum(ponto) as total_pontos from Historico;
+sum(ponto) as total_pontos from Historico h join Usuario u on h.fkUsuario = u.idUsuario;
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
@@ -13,7 +13,7 @@ sum(ponto) as total_pontos from Historico;
 function chamar() {
     console.log("ACESSEI O AVISO  MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listar()");
     var instrucao = `
-    select tipo, altura, nivel from Jogador;
+    select tipo, altura, nivel from Usuario;
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);

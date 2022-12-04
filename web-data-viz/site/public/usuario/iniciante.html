@@ -144,9 +144,11 @@
 
                     <h3>Dias de Treino</h3>
 
-                    <li>Sabendo como será difícil fazer todos esses treinos, informe abaixo o intervalo de dias que
-                        gostaria de descansar</li>
-                    <input type="number" id="input_numero"> <button onclick="calcular()">Intervalo</button>
+                    <div class="texto">
+                    <p>Sabendo como será difícil fazer todos esses treinos, informe abaixo o intervalo de dias que
+                        gostaria de descansar <i>(Exemplo: Caso digite 2, será um dia de treino e outro de descanso, assim sucessivamente)</i>.</p>
+                    </div>
+                    <input type="number" id="input_numero"> <button class="btn_intervalo" onclick="calcular()">Intervalo</button>
                     <div id="div_resultado"></div>
 
                 </div>
@@ -275,6 +277,9 @@
                     };
                 };
             }; 
+        }else if(numero == 1){
+            alert("O treino é cansativo, ou seja, deve haver um intervalo entre os dias.")
+
         }else {
                 alert("O treino só ocorrerá  entre a segunda e a sexta, ou seja, 5 dias. Digite um numero entre 0 até 5.")
             }

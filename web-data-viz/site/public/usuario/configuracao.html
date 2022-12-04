@@ -38,15 +38,38 @@
 
         <div class="container">
             <div class="dados">
-                <b>Nome:</b> <span id="nome_usuario">nome</span>
-                    
-                <b>Tipo:</b> <span id="tipo_usuario">tipo jogador</span>
+                <div class="usuario">
+                    <b>Nome:</b> 
+                    <span id="nome_usuario">nome</span>
+                </div>
+                <div class="usuario">
+                    <b>Tipo:</b> 
+                    <span id="tipo_usuario">tipo jogador</span>
+                </div>
+                <div class="usuario">
+                    <b>Altura:</b>
+                    <span id="altura_usuario">altura cm</span>
+                </div>
+                <div class="usuario"> 
+                    <b>Nivel:</b> 
+                    <span id="nivel_usuario">nivel jogador</span>
+                </div>
+            </div> 
+            
+            <div class="caixa2">
+                <div class="iniciante">
+                    <div class="texto">
+                        <p><b>Dica :</b> Caso tenha selecionado seu nivel como "Iniciante", selecione o icone "Treino" que te levará para a aba de Iniciante, onde poderá descobrir um pouco mais sobre os fundamentos do esporte e <b>não se esqueça de montar sua rotina de treino</b>. Caso tenha selecionado "Amador" vá para as abas de posições para que tenha mais conhecimento sobre elas. Caso tenha selecionado "Profissional" aproveite o site como achar melhor e <b>nos avalie</b>. </p>
+                    </div>
+                    <h3>Gostou do site?</h3>
+                    <select name="avaliacao" id="input_avaliacao">
+                        <option value="null"></option>
+                        <option value="sim">Sim, muito bom!</option>
+                        <option value="nao">Não, podia fazer melhor hein!</option>
+                    </select>
+                    <button class="btn_avaliar" onclick="avaliar()">Avaliar</button>
+                </div>
             </div>
-            <div class="dados">
-                <b>Altura:</b> <span id="altura_usuario">altura cm</span>
-                        
-                <b>Nivel:</b> <span id="nivel_usuario">nivel jogador</span>
-            </div>                    
         </div>
     </div>
 

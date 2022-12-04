@@ -61,11 +61,50 @@ body {
 /* Config */
 
 .container .dados {
-    width: 80%;
-    height: 100px;
+    width: auto;
+    height: 120px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    font-size: large;
+    background-color: rgb(255, 201, 130);
+    border-style: solid;
+}
+
+.usuario {
+    margin: 20px;
+}
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa2 {
+    width: auto;
+    height: 452px;
+    background-color: rgb(255, 231, 180);
+    border-style: solid;
+}
+
+.caixa2 .texto {
+    width: 80%;
+    font-size: larger;
+}
+
+.btn_avaliar {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    width: 12%;
+    height: 40px;
+    background-color: rgb(255, 168, 53);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    color: black;
 }
 
 /* TREINO */
@@ -117,6 +156,18 @@ header a {
     margin-top: 50px;
 }
 
+.btn_intervalo {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    width: 12%;
+    height: 40px;
+    background-color: rgb(255, 168, 53);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    color: black;
+}
+
 
 /* ANALYTICS */
 
@@ -160,13 +211,14 @@ input {
 
 .btn_inserir {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-    width: 12%;
+    font-size: 20px;
+    width: 15%;
     height: 40px;
     background-color: rgb(255, 168, 53);
     border: none;
     border-radius: 5px;
     margin: 10px;
+    color: black;
 }
 
 button {
