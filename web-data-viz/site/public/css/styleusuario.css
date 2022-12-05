@@ -149,7 +149,7 @@ header a {
 .texto {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 60%;
-    font-size: 18;
+    font-size: 17px;
 }
 
 .iniciante h3 {
@@ -167,7 +167,6 @@ header a {
     margin: 10px;
     color: black;
 }
-
 
 /* ANALYTICS */
 

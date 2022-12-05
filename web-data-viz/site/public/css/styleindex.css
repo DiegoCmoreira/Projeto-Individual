@@ -129,59 +129,30 @@ body {
 .giragira .container{
   margin-top: 30px;
   border-style: solid;
-  border-radius: 20px;
-
-}
-
-.galeriaFixa {
-  overflow-x: auto;
+  border-radius: 10px;
+  overflow-y: scroll;
+ 
 }
 
 .galeria {
   display: flex;
-  flex-flow: row nowrap;
-  gap: 15px;
+  flex-direction: row;
+  align-items: center;
 }
 
-.setaEsquerda, .setaDireita {
-  position:absolute;
-  top: 0;
-  left: 0;
-  right: auto;
-  bottom: 0;
-  font-size: 90px;
-  line-height: 250px;
-  width: 40px;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  background: linear-gradient(to left, transparent 0%, black 200%);
-  opacity: 0.1;
-  transition: all 600ms ease-in-out;
+.imagem {
+  margin: 20px;
+  width: auto;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.setaDireita {
-  left: auto;
-  right: 0;
-  background: linear-gradient(to right, transparent 0%, black 200%);
-}
-
-.setaDireita:hover,
-.setaEsquerda:hover {
-  opacity: 1;
-}
 
 .item {
-  width: 300px;
-  height: 200px;
-  flex-shrink: 0;
-  opacity: 0.6;
-  transition: all 600ms ease-in-out;
-}
-
-.primeiro-item {
-  opacity: 1;
+  width: 400px;
+  height: 320px;
 }
 
 /* FOOTER */
