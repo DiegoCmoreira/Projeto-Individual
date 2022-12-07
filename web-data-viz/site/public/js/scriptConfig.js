@@ -32,6 +32,9 @@ function avaliar() {
     var avaliacaoVar = input_avaliacao.value;
     var idUsuario = sessionStorage.getItem("ID_USUARIO")
 
+    box.style.display = "none";
+    resultado.innerHTML = `<h3>Obrigado pela Avaliação!</h3> <h4>Sua resposta foi enviada com sucesso. Regarregue a página para fazer outra avaliação</h4>`;
+
     // Enviando o valor da nova input
     fetch("/usuarios/avaliar", {
         method: "POST",
@@ -51,8 +54,9 @@ function avaliar() {
         if (resposta.ok) {
             cardErro.style.display = "block";
 
-            mensagem_erro.innerHTML = "Dados inseridos com sucesso.";
-            
+            resultado.innerHTML = `<h3>Obrigado pela Avaliação!</h3>
+            <h4>Sua resposta foi enviada com sucesso.</h4>`;
+
             limparFormulario();
             finalizarAguardar();
         } else {

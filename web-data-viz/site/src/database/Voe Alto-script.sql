@@ -21,7 +21,9 @@ fkUsuario int,
 foreign key (fkUsuario) references Usuario(idUsuario)
 );
 
-select * from Usuario;
-select * from Jogador;
-select sum(partida) as total_partidas, sum(vitoria) as total_vitorias, sum(derrota) as total_derrotas,
-sum(ponto) as total_pontos from Historico where fkUsuario = idUsuario;
+create table Avaliacao(
+idAvaliacao int primary key auto_increment,
+avaliacao varchar (45),
+fkUsuario int,
+foreign key (fkUsuario) references Usuario(idUsuario)
+); 
